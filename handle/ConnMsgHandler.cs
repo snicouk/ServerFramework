@@ -21,8 +21,8 @@ namespace SocketServer
         /// </summary>
         public void MsgLogin(Connect pConn, ProtocolBase pProto)
         {
-            Console.WriteLine("[登陆协议]");
-            ProtocolByte _ret = (ProtocolByte)ProtocolHelper.Login(-1);
+          //  Console.WriteLine("[登陆协议]");
+            ProtocolByte _ret = (ProtocolByte)ProtocolHelper.Login(1);
             Console.WriteLine(_ret.GetProtoConent());
             pConn.Send(_ret);
         }
@@ -39,7 +39,7 @@ namespace SocketServer
         /// </summary>
         public void MsgHeartBeat(Connect pConn, ProtocolBase pProto)
         {
-           // Console.WriteLine("[心跳协议]");
+            Console.WriteLine("[心跳协议]");
             pConn.laskTickTime = Define.GetTimeStamp();
         }
         /// <summary>
