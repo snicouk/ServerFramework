@@ -1,0 +1,42 @@
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\NetServ.exe.config
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\NetServ.exe
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\NetServ.pdb
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\MySql.Data.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\Google.Protobuf.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\Zstandard.Net.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\System.Memory.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\System.Buffers.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\y2021\Desktop\SocketServer - 副本\bin\Debug\MySql.Data.xml
+C:\Users\y2021\Desktop\SocketServer - 副本\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
+C:\Users\y2021\Desktop\SocketServer - 副本\obj\Debug\SocketServer.csproj.CopyComplete
+C:\Users\y2021\Desktop\SocketServer - 副本\obj\Debug\NetServ.exe
+C:\Users\y2021\Desktop\SocketServer - 副本\obj\Debug\NetServ.pdb
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\NetServ.exe.config
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\NetServ.exe
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\NetServ.pdb
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\MySql.Data.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\Google.Protobuf.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\Zstandard.Net.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\BouncyCastle.Crypto.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\Ubiety.Dns.Core.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\System.Memory.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\System.Buffers.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\K4os.Compression.LZ4.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\K4os.Hash.xxHash.dll
+D:\Snicouk\TestSpace\SocketServer\bin\Debug\MySql.Data.xml
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.AssemblyReference.cache
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.SuggestedBindingRedirects.cache
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\NetServ.exe.config
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.CopyComplete
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\NetServ.exe
+D:\Snicouk\TestSpace\SocketServer\obj\Debug\NetServ.pdb
