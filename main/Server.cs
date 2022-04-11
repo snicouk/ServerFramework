@@ -223,7 +223,7 @@ namespace SocketServer
                 }
             }
             m_connList.Clear();
-            SQL.Instance.DisConn();
+            SQL.Instance.DisConnDB();
         }
 
 

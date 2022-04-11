@@ -40,9 +40,6 @@ D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.CoreCompileInput
 D:\Snicouk\TestSpace\SocketServer\obj\Debug\SocketServer.csproj.CopyComplete
 D:\Snicouk\TestSpace\SocketServer\obj\Debug\NetServ.exe
 D:\Snicouk\TestSpace\SocketServer\obj\Debug\NetServ.pdb
-D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\NetServ.exe.config
-D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\NetServ.exe
-D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\NetServ.pdb
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\MySql.Data.dll
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Google.Protobuf.dll
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Zstandard.Net.dll
@@ -57,8 +54,11 @@ D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\K4os.Hash.xxHash.dll
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\MySql.Data.xml
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.AssemblyReference.cache
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.SuggestedBindingRedirects.cache
-D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\NetServ.exe.config
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.CopyComplete
-D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\NetServ.exe
-D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\NetServ.pdb
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.exe.config
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.exe
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.pdb
+D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe.config
+D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe
+D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.pdb

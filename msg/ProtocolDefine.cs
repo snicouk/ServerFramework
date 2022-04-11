@@ -12,7 +12,7 @@ namespace SocketServer
         /// <summary> µÇ³ö </summary>
         public const string Logout = "Logout";
         /// <summary> ×¢²á </summary>
-        public const string Regsiter = "Regsiter";
+        public const string Register = "Register";
     }
 }
 

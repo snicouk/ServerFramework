@@ -37,7 +37,7 @@ namespace SocketServer
         static public ProtocolBase Regsiter(int pResult)
         {
             ProtocolByte _protocol = new ProtocolByte();
-            _protocol.AddString(ProtocolDefine.Regsiter);
+            _protocol.AddString(ProtocolDefine.Register);
             _protocol.AddInt(pResult);
             return _protocol;
         }
