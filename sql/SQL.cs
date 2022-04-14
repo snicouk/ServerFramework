@@ -54,7 +54,7 @@ namespace SocketServer
                 string _cmdStr = SqlDenfine.CmdTBUserInfoStr(pAccount, pPassword);
                 MySqlCommand _cmd = new MySqlCommand(_cmdStr, m_sqlConn);
                 try
-                {
+                {          
                     MySqlDataReader _dataReader = _cmd.ExecuteReader();
                     bool _hasRows = _dataReader.HasRows; //如果数据库表中有这一行数据
                     _dataReader.Close();
@@ -71,7 +71,7 @@ namespace SocketServer
             }
         }
 
-        public bool CanRegister(string pAccount,string pPassword)
+        public bool CanRegister(string pAccount,string pPassword,ref bool pIsExist)
         {
             
             if (SqlDenfine.IsSafe(pAccount) && SqlDenfine.IsSafe(pPassword))
@@ -83,6 +83,7 @@ namespace SocketServer
                     MySqlDataReader _dataReader = _cmd.ExecuteReader();
                     bool _hasRows = _dataReader.HasRows; //如果数据库表中有这一行数据
                     _dataReader.Close();
+                    pIsExist = _hasRows;
                     return !_hasRows;  // 如果是false 则表明数据库没这条记录，可以注册
                 }
                 catch
@@ -96,9 +97,9 @@ namespace SocketServer
             }
         }
 
-        public bool Register(string pAccount ,string pPassword)
+        public bool Register(string pAccount ,string pPassword,ref bool pIsExist)
         {
-            if(CanRegister(pAccount,pPassword))
+            if(CanRegister(pAccount,pPassword, ref pIsExist))
             {
                 string _cmdStr = SqlDenfine.CmdInsertTBUserInfoStr(pAccount, pPassword);
                 MySqlCommand _cmd = new MySqlCommand(_cmdStr, m_sqlConn);

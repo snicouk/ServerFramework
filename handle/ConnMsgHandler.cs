@@ -29,9 +29,9 @@ namespace SocketServer
             string _password = _proto.GetString(_start, ref _start);
 
             ProtocolByte _returnLoginProto = null;
-
-            if(SQL.Instance.IsExistUser(_account, _password))
-            {
+          
+            if (SQL.Instance.IsExistUser(_account, _password))
+            {        
                 _returnLoginProto = (ProtocolByte)ProtocolHelper.Login(1);
             }
             else
@@ -55,7 +55,7 @@ namespace SocketServer
         /// </summary>
         public void MsgHeartBeat(Connect pConn, ProtocolBase pProto)
         {
-            Console.WriteLine("[心跳协议]");
+           // Console.WriteLine("[心跳协议]");
             pConn.laskTickTime = Define.GetTimeStamp();
         }
         /// <summary>
@@ -70,15 +70,22 @@ namespace SocketServer
             string _password = _proto.GetString(_start, ref _start);
 
             ProtocolByte _returnProto = null;
-
+            bool _isExsit = false;
             //如果不存在
-            if(SQL.Instance.Register(_account, _password))
+            if(SQL.Instance.Register(_account, _password,ref _isExsit))
             {
                 _returnProto = (ProtocolByte)ProtocolHelper.Regsiter(1);
             }
             else
             {
-                _returnProto = (ProtocolByte)ProtocolHelper.Regsiter(-1);
+                if (_isExsit)
+                {
+                    _returnProto = (ProtocolByte)ProtocolHelper.Regsiter(0);
+                }
+                else
+                {
+                    _returnProto = (ProtocolByte)ProtocolHelper.Regsiter(-1);
+                }          
             }
             pConn.Send(_returnProto);
         }

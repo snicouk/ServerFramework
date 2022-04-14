@@ -152,7 +152,7 @@ namespace SocketServer
         {
             string _protoName = pProto.GetProtoName();
             string _msg = "Msg" + _protoName;
-            Console.WriteLine(_msg);
+            //Console.WriteLine(_msg);
             MethodInfo _method = m_msgHandler.GetType().GetMethod(_msg);
             if (_method == null)
             {
