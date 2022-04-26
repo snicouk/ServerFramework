@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data;
 using MySql.Data.MySqlClient;
-using System.Data;
-using System.Text.RegularExpressions;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace SocketServer
 {
@@ -22,7 +11,7 @@ namespace SocketServer
         private string m_password = "123456";
         private MySqlConnection m_sqlConn = null;
         static public SQL Instance = null;
-
+        
         public SQL()
         {
             Instance = this;
@@ -31,6 +20,7 @@ namespace SocketServer
 
         private bool ConnDB()
         {
+            SqlDenfine.Init();
             string _cmdStr = SqlDenfine.CmdDBStr(m_host, m_port, m_user, m_password, SqlDenfine.DB_User);
             try
             {
@@ -48,6 +38,7 @@ namespace SocketServer
 
         public bool IsExistUser(string pAccount, string pPassword)
         {
+       
             //防止账号密码注入非法字符
             if (SqlDenfine.IsSafe(pAccount) && SqlDenfine.IsSafe(pPassword))
             {
@@ -99,7 +90,7 @@ namespace SocketServer
 
         public bool Register(string pAccount ,string pPassword,ref bool pIsExist)
         {
-            if(CanRegister(pAccount,pPassword, ref pIsExist))
+            if(CanRegister(pAccount, pPassword, ref pIsExist))
             {
                 string _cmdStr = SqlDenfine.CmdInsertTBUserInfoStr(pAccount, pPassword);
                 MySqlCommand _cmd = new MySqlCommand(_cmdStr, m_sqlConn);
@@ -119,7 +110,55 @@ namespace SocketServer
             }
         }
 
+        public bool CreateNewCharacterInfo(string pTable,string pAccount,string pName)
+        {
+            if (!SqlDenfine.IsSafe(pAccount))
+                return false;
+            string  _cmdStr = string.Format("select * from {0} where account ='{1}';", pTable, pAccount);
+            MySqlCommand _cmd = new MySqlCommand(_cmdStr, m_sqlConn);
+            try
+            {
+                MySqlDataReader _dataReader = _cmd.ExecuteReader();
+                bool _hasRows = _dataReader.HasRows;
+                if (_hasRows == false) //如果没有角色数据就创建
+                {
+                    _cmdStr = SqlDenfine.CmdInsertNewCharacterInfo(pTable, pAccount, pName, 100, 100, 500);
+                    _cmd.ExecuteNonQuery();
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
+
+        public bool GetCharacterInfo(string pTable ,string pAccount,ref UserBaseData pData)
+        {
+            if (!SqlDenfine.IsSafe(pAccount))
+                return false;
+
+            string _cmdStr = string.Format("select * from {0} where account ='{1}';", pTable, pAccount);
+            MySqlCommand _cmd = new MySqlCommand(_cmdStr, m_sqlConn);
+            try
+            {
+                MySqlDataReader _dataReader = _cmd.ExecuteReader();
+                bool _hasRows = _dataReader.HasRows;
+                if (!_hasRows)
+                    return false;
+                pData = new UserBaseData();
+                pData.name  = _dataReader.GetString("name");
+                pData.hp = _dataReader.GetInt32("hp");
+                pData.mp = _dataReader.GetInt32("mp");
+                pData.combatPower = _dataReader.GetInt32("combatpower");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
         public void DisConnDB()
         {

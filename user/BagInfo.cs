@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SocketServer
 {
-    public partial class MsgHandler
+    /// <summary>
+    /// 背包信息
+    /// </summary>
+    public class BagInfo
     {
 
     }

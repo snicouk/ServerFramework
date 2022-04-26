@@ -62,3 +62,5 @@ D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.pdb
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe.config
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.pdb
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Newtonsoft.Json.dll
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Newtonsoft.Json.xml

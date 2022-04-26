@@ -107,7 +107,7 @@ namespace SocketServer
                     DeCodeData(_conn);
                     _conn.socket.BeginReceive(_conn.readBuffer, _conn.bufferCount, _conn.BufferRemain(), SocketFlags.None, OnReceive, _conn);
                 }
-                catch (Exception e)
+                catch
                 {
                     _conn.DisConn();
                     if (m_connList.Contains(_conn))

@@ -9,16 +9,37 @@ namespace SocketServer
 {
     public class SqlDenfine
     {
+       
+        private enum District
+        {
+            HuaHaoYueYuan = 0,
+            YaoMingLiWang = 1
+        }
 
         private const string ConnRegex = @"[-|;|,|\/|\(|\)|\[|\]|\}|\{|&|@|\*|!|\']";
 
 
         /// <summary>  user 数据库 </summary>
-        public const string DB_User = "user";
+        public const string DB_User = "autumn";
         /// <summary>  userinfo 表 </summary>
-        public const string TB_UserInfo = "userinfo";
-      
-      
+        public const string TB_UserInfo = "user";
+
+        //每个区的用户账号表
+        static private Dictionary<int, string> m_userTableDict = new Dictionary<int, string>();
+
+        //static private Dictionary<District, string> m_userTableDict = new Dictionary<District, string>();
+
+        static public void Init()
+        {
+            InitUserTableDict();
+        }
+
+        static private void InitUserTableDict()
+        {
+            m_userTableDict.Add(0, "huahaoyueyuan_user");
+            m_userTableDict.Add(1, "yangmingliwan_user");
+        }
+
         /// <summary>
         /// 是否合法
         /// </summary>
@@ -69,6 +90,19 @@ namespace SocketServer
         static public string CmdInsertTBUserInfoStr(string pAccountm ,string pPassword)
         {
             string _str = string.Format("insert into {0} set account='{1}',password='{2}';", TB_UserInfo, pAccountm, pPassword);
+            return _str;
+        }
+
+        static public string GetTabelName(int pId)
+        {
+           if(m_userTableDict.ContainsKey(pId))
+                return m_userTableDict[pId];
+           return string.Empty;
+        }
+
+        static public string CmdInsertNewCharacterInfo(string pTableName,string pAccount,string pName,int pHp,int pMp,int pCombatPower)
+        {
+            string _str = string.Format("insert into {0} set account='{1}',name='{2}',mp='{3}',hp='{4}',combatpower='{5}';", pTableName, pAccount, pName, pMp, pHp, pCombatPower);
             return _str;
         }
        

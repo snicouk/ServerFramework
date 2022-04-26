@@ -34,6 +34,7 @@ namespace SocketServer
         
         public long laskTickTime = long.MinValue;
 
+        public User user;
 
         public Connect()
         {
@@ -79,6 +80,8 @@ namespace SocketServer
                 return;
             if (socket == null)
                 return;
+            user.Dispose();
+            user = null;
             Console.WriteLine("[断开连接] " +GetAdress());
             socket.Shutdown(SocketShutdown.Both);
             socket.Close();
