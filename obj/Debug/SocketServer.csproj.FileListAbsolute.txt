@@ -53,14 +53,11 @@ D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\K4os.Compression.LZ4.dl
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\K4os.Hash.xxHash.dll
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\MySql.Data.xml
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.AssemblyReference.cache
-D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.SuggestedBindingRedirects.cache
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.csproj.CopyComplete
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.exe.config
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.exe
 D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\SocketServer.pdb
-D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe.config
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.exe
 D:\Snicouk\TestSpace\Framework\ServerFramework\obj\Debug\SocketServer.pdb
-D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Newtonsoft.Json.dll
-D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\Newtonsoft.Json.xml
+D:\Snicouk\TestSpace\Framework\ServerFramework\bin\Debug\System.Numerics.Vectors.dll

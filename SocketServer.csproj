@@ -56,7 +56,6 @@
     <Compile Include="define\Define.cs" />
     <Compile Include="handle\ConnMsgHandler.cs" />
     <Compile Include="handle\MsgHandler.cs" />
-    <Compile Include="handle\TestMsgHandler.cs" />
     <Compile Include="main\Server.cs" />
     <Compile Include="main\ServMain.cs" />
     <Compile Include="msg\ProtocolBase.cs" />
@@ -64,9 +63,10 @@
     <Compile Include="msg\ProtocolDefine.cs" />
     <Compile Include="msg\ProtocolHelper.cs" />
     <Compile Include="msg\ProtocolString.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sql\SQL.cs" />
-    <Compile Include="sql\SqlDenfine.cs" />
+    <Compile Include="sql\SqlDenfine.cs" />   
+    <Compile Include="userData\User.cs" />
+    <Compile Include="userData\UserBaseData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
